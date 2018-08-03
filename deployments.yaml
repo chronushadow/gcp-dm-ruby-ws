@@ -1,0 +1,12 @@
+imports:
+- path: container_manifest.yaml
+  name: container_manifest
+- path: templates/vm.py
+  name: vm.py
+
+resources:
+- name: test
+  type: vm.py
+  properties: 
+    zone: asia-northeast1-a
+    containerManifest: container_manifest

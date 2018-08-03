@@ -1,0 +1,16 @@
+info:
+  title: Container VM
+  author: chronushadow
+  description: Create a container VM with the provided Container manifest. 
+
+required:
+  - zone
+  - containerManifest
+
+properties:
+  zone:
+    description: Zone in which this VM will run.
+    type: string
+  containerManifest:
+    description: String containing the Container Manifest in YAML.
+    type: string
